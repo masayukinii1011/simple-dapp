@@ -23,6 +23,11 @@ async function main() {
   const todoList = await TodoList.deploy();
   await todoList.deployed();
   console.log("todoList deployed to:", todoList.address);
+
+  const NFT = await ethers.getContractFactory("NFT");
+  const nft = await NFT.deploy();
+  await nft.deployed();
+  console.log("nft deployed to:", nft.address);
 }
 
 // We recommend this pattern to be able to use async/await everywhere
