@@ -1,6 +1,6 @@
 import { ethers } from "hardhat";
 
-const { expect } = require("chai");
+import { expect } from "chai";
 
 describe("Greeter", function () {
   this.timeout(60 * 1000); // タイムアウトを延ばすため追加
